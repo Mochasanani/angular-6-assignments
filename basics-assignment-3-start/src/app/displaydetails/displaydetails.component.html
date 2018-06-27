@@ -1,0 +1,13 @@
+<p>Display details! Assignment 3</p>
+<input type="button" class="btn btn-primary" value="Display Details" (click)="onDisplayDetail()"/>
+<p *ngIf="showDetail">'Secret Password = tuna'</p>
+<ol>
+  <li *ngFor="let clickDetail of clickDetails; let i = index">
+    <p [innerText]="clickDetail"
+       [ngStyle]="{background: getColor(i)}"
+       [ngClass]="{clickDetailsOverFive: i >= 5}"
+        >
+
+    </p>
+  </li>
+</ol>
