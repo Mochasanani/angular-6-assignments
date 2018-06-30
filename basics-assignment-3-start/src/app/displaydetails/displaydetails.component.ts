@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DisplaydetailsComponent implements OnInit {
   showDetail = false;
   clickDetails = [];
+  public name: string;
+
 
   constructor() { }
 
